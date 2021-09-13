@@ -1,6 +1,8 @@
 package estancias.servicios;
 
+import estancias.entidades.Casa;
 import estancias.entidades.Familia;
+import estancias.persistencias.CasaDAO;
 import estancias.persistencias.FamiliaDAO;
 
 import java.util.List;
@@ -10,6 +12,20 @@ public class FamiliaServicio {
     private final List<Familia> familias = DAO.obtenerFamilias();
 
     public FamiliaServicio() throws Exception {
+    }
+
+    public void mostrarFamilias(){
+        try {
+            FamiliaDAO DAO = new FamiliaDAO();
+            List<Familia> familias = DAO.obtenerFamilias();
+
+            System.out.println("Tamaño de casas + " + familias.size());
+            for (Familia familia: familias) {
+                System.out.println(familia);
+            }
+        }catch (Exception e){
+            System.out.println("Algo salio mal trayendo las familias");
+        }
     }
 
     public void familiasConTresHijos() {

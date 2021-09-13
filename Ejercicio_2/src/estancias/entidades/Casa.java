@@ -114,19 +114,8 @@ public class Casa {
 
     @Override
     public String toString() {
-        return "Casa{" +'\n' +
-                "id=" + id +'\n' +
-                ", calle='" + calle + '\'' +'\n' +
-                ", numero=" + numero +'\n' +
-                ", codigo_postal='" + codigo_postal + '\'' +'\n' +
-                ", ciudad='" + ciudad + '\'' +'\n' +
-                ", pais='" + pais + '\'' +'\n' +
-                ", fecha_desde=" + fecha_desde +'\n' +
-                ", fecha_hasta=" + fecha_hasta +'\n' +
-                ", tiempo_minimo=" + tiempo_minimo +'\n' +
-                ", tiempo_maximo=" + tiempo_maximo +'\n' +
-                ", precio_habitacion=" + precio_habitacion +'\n' +
-                ", tipo_vivienda='" + tipo_vivienda + '\'' +'\n' +
-                '}' + '\n';
+        return "Casa id="+ id+ ". Calle "+ calle + " " + numero + ", codigo_postal='" + codigo_postal + ", ciudad='" + ciudad + ", pais='" + pais + "\n" +
+                "Alquiler: fecha_desde=" + fecha_desde +", fecha_hasta=" + fecha_hasta + ", tiempo_minimo=" + tiempo_minimo + ", tiempo_maximo=" + tiempo_maximo +'\n' +
+                "precio_habitacion=" + precio_habitacion +", tipo_vivienda='" + tipo_vivienda +'\n';
     }
 }

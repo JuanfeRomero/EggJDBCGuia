@@ -67,13 +67,9 @@ public class Familia {
 
     @Override
     public String toString() {
-        return "Familia{" +"\n" +
-                "id=" + id + "\n" +
-                ", nombre='" + nombre + '\'' + '\n' +
-                ", edad_minima=" + edad_minima +'\n' +
-                ", edad_maxima=" + edad_maxima +'\n' +
-                ", num_hijos=" + num_hijos +'\n' +
-                ", email='" + email + '\'' +'\n' +
+        return "Familia{" +"id=" + id + ", nombre='" + nombre + '\'' + '\n' +
+                ", edad_minima=" + edad_minima + ", edad_maxima=" + edad_maxima +'\n' +
+                ", num_hijos=" + num_hijos + ", email='" + email + '\'' +'\n' +
                 ", casa=" + casa +'\n' +
                 '}' +'\n';
     }
